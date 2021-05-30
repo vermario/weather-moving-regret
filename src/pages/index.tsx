@@ -1,7 +1,5 @@
 import Location from "components/Location";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
-
-import React, { FormEvent, useState } from "react";
 import Head from "next/head";
 
 export default function Home(): JSX.Element {
