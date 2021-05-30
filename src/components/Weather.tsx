@@ -6,9 +6,7 @@ import {
   Heading,
   Avatar,
   Box,
-  Center,
   useColorModeValue,
-  simpleGrid,
   SimpleGrid,
 } from "@chakra-ui/react";
 
