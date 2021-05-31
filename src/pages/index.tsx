@@ -24,7 +24,11 @@ export default function Home(): JSX.Element {
       <Location initialTown="Torino" initialState="IT"></Location>
       <Center>Compared with:</Center>
       <Location initialTown="Helsinki" initialState="FI"></Location>
-      <Center>Happy now?</Center>
+      <Center>
+        <Heading size="md" pt="5" pb="5">
+          Happy now?
+        </Heading>
+      </Center>
     </>
   );
 }
