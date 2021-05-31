@@ -17,7 +17,7 @@ type WeatherProps = {
 export default function Weather({ weather }: WeatherProps): JSX.Element {
   //console.log(weather);
   const result = weather?.weather[0];
-  const position: LatLngExpression = [weather.coord.lat, weather.coord.lon];
+  const position: LatLngExpression = [weather?.coord.lat, weather?.coord.lon];
   const MapNoSsr = dynamic(() => import("components/Map"), { ssr: false });
   return (
     <SimpleGrid columns={2} spacing={0}>

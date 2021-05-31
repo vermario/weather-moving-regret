@@ -7,12 +7,7 @@ type MapProps = {
 
 export default function Map({ position }: MapProps): JSX.Element {
   return (
-    <MapContainer
-      center={position}
-      zoom={13}
-      scrollWheelZoom={false}
-      height="200px"
-    >
+    <MapContainer center={position} zoom={5} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
