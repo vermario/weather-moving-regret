@@ -17,13 +17,14 @@ export default function Home(): JSX.Element {
         <Heading>Migrant weather regret calculator</Heading>
         <Text>
           So at some point you moved for work or study or love... Check the
-          weather there and where you live now. Then either cry or rejoice! But
-          most likely cry.
+          weather there and where you live now. Then either cry or rejoice! (If
+          it's something like November, most likely cry.)
         </Text>
       </Box>
       <Location initialTown="Torino" initialState="IT"></Location>
-      <Center>VS</Center>
+      <Center>Compared with:</Center>
       <Location initialTown="Helsinki" initialState="FI"></Location>
+      <Center>Happy now?</Center>
     </>
   );
 }

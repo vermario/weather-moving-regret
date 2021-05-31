@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useState, useEffect } from "react";
 import { Input, Button, Box, SimpleGrid } from "@chakra-ui/react";
 import Weather from "components/Weather";
 
@@ -22,6 +22,9 @@ export default function Location({
       enabled: false,
     }
   );
+  useEffect(() => {
+    refetch();
+  }, []);
   const handleSubmit = (e: FormEvent) => {
     refetch();
     e.preventDefault();
