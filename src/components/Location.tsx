@@ -56,7 +56,6 @@ export default function Location({
         </form>
       </Box>
       {error && <p>Error!</p>}
-      {!data?.weather && <p>Ok, no idea what that place is! Can you type?</p>}
       {data?.weather && <Weather weather={data}></Weather>}
     </Box>
   );
