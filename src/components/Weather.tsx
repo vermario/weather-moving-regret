@@ -29,9 +29,9 @@ export default function Weather({ weather }: WeatherProps): JSX.Element {
         textAlign={"center"}
       >
         <Avatar
-          size={"xxl"}
+          size={"xl"}
           src={`http://openweathermap.org/img/wn/${result?.icon}@2x.png`}
-          alt={"Avatar Alt"}
+          alt={"Weather icon"}
           mb={4}
           pos={"relative"}
         />

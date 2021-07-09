@@ -1,6 +1,7 @@
 import { useQuery } from "react-query";
 import React, { FormEvent, useState, useEffect } from "react";
 import { Input, Button, Box, SimpleGrid } from "@chakra-ui/react";
+import FadeIn from "react-fade-in";
 import Weather from "components/Weather";
 
 type locationProps = {
@@ -56,7 +57,9 @@ export default function Location({
         </form>
       </Box>
       {error && <p>Error!</p>}
-      {data?.weather && <Weather weather={data}></Weather>}
+      <FadeIn>
+        {data?.weather && !isLoading && <Weather weather={data}></Weather>}
+      </FadeIn>
     </Box>
   );
 }
