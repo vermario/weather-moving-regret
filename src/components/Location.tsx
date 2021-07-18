@@ -6,7 +6,7 @@ import Weather from "components/Weather";
 
 type locationProps = {
   initialTown: string;
-  initialState: string;
+  initialState: string | null;
 };
 
 export default function Location({
@@ -25,7 +25,7 @@ export default function Location({
   );
   useEffect(() => {
     refetch();
-  }, []);
+  }, [refetch]);
   const handleSubmit = (e: FormEvent) => {
     refetch();
     e.preventDefault();
