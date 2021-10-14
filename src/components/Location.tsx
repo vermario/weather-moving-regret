@@ -49,7 +49,7 @@ export default function Location({
               name="CountryCode"
               type="text"
               value={countryCode}
-              onChange={(e) => setCountryCode(latinize(e.target.value))}
+              onChange={(e) => setCountryCode(e.target.value)}
             />
             <Button colorScheme="teal" isLoading={isLoading} type="submit">
               Get weather
