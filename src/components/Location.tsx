@@ -1,4 +1,5 @@
 import { useQuery } from "react-query";
+import latinize from "latinize";
 import React, { FormEvent, useState, useEffect } from "react";
 import { Input, Button, Box, SimpleGrid } from "@chakra-ui/react";
 import FadeIn from "react-fade-in";
@@ -41,14 +42,14 @@ export default function Location({
               name="city"
               type="text"
               value={city}
-              onChange={(e) => setCity(e.target.value)}
+              onChange={(e) => setCity(latinize(e.target.value))}
             />
             <Input
               placeholder="CountryCode"
               name="CountryCode"
               type="text"
               value={countryCode}
-              onChange={(e) => setCountryCode(e.target.value)}
+              onChange={(e) => setCountryCode(latinize(e.target.value))}
             />
             <Button colorScheme="teal" isLoading={isLoading} type="submit">
               Get weather
