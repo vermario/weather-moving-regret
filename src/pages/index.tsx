@@ -26,9 +26,11 @@ export default function Home(): JSX.Element {
           it's something like November, most likely cry.)
         </Text>
       </Box>
-      <Location initialTown="Torino" initialState="IT"></Location>
+      <Location initialTown="Villareggia" initialState="IT"></Location>
       <Center>Compared with:</Center>
-      <Location initialTown="Helsinki" initialState="FI"></Location>
+      <Location initialTown="Jarvenpaa" initialState="FI"></Location>
+      <Center>or:</Center>
+      <Location initialTown="Lille" initialState="FR"></Location>
       <Center>
         <Heading size="md" pt="5" pb="5">
           Happy now?
