@@ -31,7 +31,6 @@ export default function Weather({ weather }: WeatherProps): JSX.Element {
         <Avatar
           size={"xl"}
           src={`http://openweathermap.org/img/wn/${result?.icon}@2x.png`}
-          alt={"Weather icon"}
           mb={4}
           pos={"relative"}
         />
