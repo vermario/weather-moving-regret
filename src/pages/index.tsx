@@ -9,7 +9,7 @@ export default function Home(): JSX.Element {
         <Text>
           So at some point you moved for work or study or love... Check the
           weather there and where you live now. Then either cry or rejoice! (If
-          it's something like November, most likely cry.)
+          it&apos;s something like November, most likely cry.)
         </Text>
       </Box>
       <Location initialTown="Villareggia" initialState="IT"></Location>
