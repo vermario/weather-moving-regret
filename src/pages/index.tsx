@@ -1,7 +1,7 @@
 import Location from "components/Location";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import Header from "components/Header";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 
 export default function Home(): JSX.Element {
   const { data: session } = useSession();
